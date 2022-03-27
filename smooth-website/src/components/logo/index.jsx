@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-import BeemaLogo from "../../assets/logo/logo_cropped.png";
+// import BeemaLogo from "../../assets/logo/logo_cropped.png";
 import BabuSirImage from "../../assets/logo/babu_sir.jpg";
 import { theme } from "../../theme";
 

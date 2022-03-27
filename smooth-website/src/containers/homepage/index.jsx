@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { About } from "./about";
+import { AboutSection } from "./aboutSection";
+import { DetailedSection } from "./detailedSection";
+import { ReviewsSections } from "./reviewSection";
 import { TopSection } from "./topSection";
 
 const PageContainer = styled.div`
@@ -14,7 +16,9 @@ export function Homepage(props) {
   return (
     <PageContainer>
       <TopSection />
-      <About />
+      <AboutSection />
+      <ReviewsSections />
+      <DetailedSection/>
     </PageContainer>
   );
 }

@@ -39,6 +39,7 @@ const CaptionText = styled.h1`
   line-height: 1.2;
   color: #fff;
   margin: 0px;
+  text-align: center;
 `;
 
 const DownArrowComponentContainer = styled.div`

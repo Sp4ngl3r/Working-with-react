@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Footer } from "../../components/footer";
 import { AboutSection } from "./aboutSection";
 import { DetailedSection } from "./detailedSection";
 import { ReviewsSections } from "./reviewSection";
@@ -19,6 +20,7 @@ export function Homepage(props) {
       <AboutSection />
       <ReviewsSections />
       <DetailedSection/>
+      <Footer/> 
     </PageContainer>
   );
 }

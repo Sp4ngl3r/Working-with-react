@@ -46,8 +46,8 @@ const ReviewerDetailsContainer = styled.div`
 `;
 
 const ReviewerImage = styled.img`
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 0px 15px;
 `;

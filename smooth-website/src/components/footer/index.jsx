@@ -18,6 +18,10 @@ const FooterContainer = styled.div`
   align-items: center;
   background-color: #332d2d;
   position: relative;
+
+  @media screen and (max-width: 480px) {
+    height: 600px;
+  }
 `;
 
 const FooterText = styled.h1`
@@ -28,23 +32,21 @@ const FooterText = styled.h1`
   margin: 0px;
 `;
 
-const FooterEndLine = styled.span`
-  min-width: 100%;
-  min-height: 2px;
-  margin-bottom: 1em;
-  background-color: #cdcdcd;
-  display: flex;
-`;
-
 const CompanyDetailsContainer = styled.div`
-  width: 90%;
+  width: 95%;
   display: flex;
   border-top: 1px solid #cdcdcd;
   padding-top: 11px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
   color: #fff;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
 `;
 
 const PrivacyContainer = styled.div`
@@ -63,6 +65,15 @@ const SocialIcon = styled.div`
 
   &:not(:last-of-type) {
     margin-right: 18px;
+
+    @media screen and (max-width: 480px) {
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
   }
 
   &:hover {
@@ -78,6 +89,14 @@ const Link = styled.a`
 
   &:not(:last-of-type) {
     margin-right: 24px;
+
+    @media screen and (max-width: 480px) {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 9px;
   }
 
   &:hover {
@@ -92,6 +111,11 @@ const RightsReservedText = styled.div`
   transform: translateX(-50%);
   color: #fff;
   font-size: 11px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 7px;
+    text-align: center;
+  }
 `;
 
 export function Footer(props) {

@@ -1,6 +1,7 @@
 import React from "react";
 import { scroller } from "react-scroll/modules";
 import { Element } from "react-scroll/modules";
+import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 
 import BackgroundImage from "../../assets/pictures/Arun_Kumar_Sir.jpg";
@@ -50,6 +51,8 @@ const DownArrowComponentContainer = styled.div`
 `;
 
 export function TopSection(props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
+
   const scrollingToNextSection = () => {
     scroller.scrollTo("about", { smooth: true, duration: 1500 });
   };
@@ -59,7 +62,11 @@ export function TopSection(props) {
       <TopContainer>
         <BackgroundFilter>
           <NavigationBar />
-          <Marginer direction="vertical" margin="11em" />
+          {isMobile ? (
+            <Marginer direction="vertical" margin="5em" />
+          ) : (
+            <Marginer direction="vertical" margin="11em" />
+          )}
           <Logo />
           <Marginer direction="vertical" margin="2em" />
           <CaptionText>Short Description about the school</CaptionText>

@@ -10,13 +10,19 @@ const MoreDetailsContainer = styled(Element)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* padding: 0 3em; */
 `;
 
 const DetailsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 60%;
+  max-width: 65%;
+  
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap-reverse;
+    max-width: 70%;
+  }
 `;
 
 const DetailsText = styled.p`
@@ -30,7 +36,13 @@ const DetailsText = styled.p`
 const DetailsImage = styled.img`
   width: 600px;
   height: 500px;
-  margin-left: 2em;
+  margin-left: 4em;
+
+  @media screen and (max-width: 480px) {
+    width: 400px;
+    height: 300px;
+    margin-left: 0;
+  }
 `;
 
 export function DetailedSection(props) {
